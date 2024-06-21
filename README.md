@@ -12,6 +12,7 @@ It streamlines server management by allowing admins to perform tasks without acc
 - Weather Control: Start and stop rain/weather on the server.
 - Messaging: Send custom messages to the server.
 - Teleportation: Teleport players within the game.
+- funny commands.
 
 ## Commands
 Here is a list of available commands:
@@ -21,9 +22,11 @@ Here is a list of available commands:
 - /restart: Start the server restart countdown.
 - /startrain: Start rain on the server.
 - /stoprain: Stop rain on the server.
+- /thunder <player>: Summon a thunderstorm around a player
 - /stopweather: Stop weather on the server until next restart.
-- /message <testo>: Send a custom message to the server.
-- /tpa <primo> <secondo>: Teleport a player to another player.
+- /message <text>: Send a custom message to the server.
+- /tpa <first> <second>: Teleport a player to another player.
+- /tpacoordinates <coordinates> : Teleport to coordinates. Use /teleportto x,y,z. Example /teleportto 10000,11000,0
 
 ## Installation
 
