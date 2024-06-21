@@ -63,7 +63,7 @@ client.on('interactionCreate', async interaction => {
                 await sendRconCommand(`thunder "${name}"`);
                 await interaction.reply('Lightning kill successful. Nice!');
                 break;
-            case 'tpaTo':
+            case 'tpacoordinates':
                 const coordinates = options.getString('coordinates');
                 await sendRconCommand(`teleportto "${coordinates}"`);
                 await interaction.reply(`Teleported to ${coordinates}`);

@@ -1,6 +1,5 @@
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const fs = require('fs');
 require('dotenv').config();
 
 const commands = [
@@ -80,13 +79,13 @@ const commands = [
         ]
     },
     {
-        name: "tpaTo",
-        description: "Teleport to coordinates. Use /teleportto x,y,z. Example /teleportto 10000,11000,0",
+        name: "tpacoordinates",
+        description: "Teleport to coordinates",
         type: 1,
         options: [
             {
                 name: "coordinates",
-                description: "put your correct coordinates x,y,z",
+                description: "put your correct coordinates",
                 type: 3,
                 required: true
             },
