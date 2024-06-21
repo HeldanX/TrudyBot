@@ -35,6 +35,7 @@ Here is a list of available commands:
 ### Install the dependencies:
 
 `npm install`
+`npm install discord.js rcon-client`
 `npm install dotenv`
 
 ### Configure your environment variables in a .env file:
@@ -45,8 +46,9 @@ PZ_SERVER_PORT=your_server_port`
 
 ### Deploy the commands and start the bot:
 
-`node deploy-commands.js
-node index.js`
+- `node deploy-commands.js`
+
+- `node index.js`
 
 _if you don't have node.js you need to install it_
 
