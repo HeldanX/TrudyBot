@@ -58,6 +58,16 @@ client.on('interactionCreate', async interaction => {
                 await sendRconCommand('stopweather');
                 await interaction.reply('Weather conditions stopped.');
                 break;
+            case 'thunder':
+                const name = options.getString('name');
+                await sendRconCommand(`thunder "${name}"`);
+                await interaction.reply('Lightning kill successful. Nice!');
+                break;
+            case 'tpaTo':
+                const coordinates = options.getString('coordinates');
+                await sendRconCommand(`teleportto "${coordinates}"`);
+                await interaction.reply(`Teleported to ${coordinates}`);
+                break;
             case 'tpa':
                 const user = options.getString('first');
                 const toUser = options.getString('second');

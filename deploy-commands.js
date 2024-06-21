@@ -35,6 +35,19 @@ const commands = [
         type: 1
     },
     {
+        name: "thunder",
+        description: "Summon a thunderstorm around a player",
+        type: 1,
+        options: [
+            {
+                name: 'name',
+                description: 'player name',
+                type: 3,
+                required: true,
+            },
+        ],
+    },
+    {
         name: 'message',
         description: 'Send a message with specified text',
         type: 1,
@@ -49,7 +62,7 @@ const commands = [
     },
     {
         name: "tpa",
-        description: "Teleport to a player",
+        description: "Teleport to a player. Once teleported, wait for the map to appear.",
         type: 1,
         options: [
             {
@@ -65,7 +78,21 @@ const commands = [
                 required: true
             }
         ]
+    },
+    {
+        name: "tpaTo",
+        description: "Teleport to coordinates. Use /teleportto x,y,z. Example /teleportto 10000,11000,0",
+        type: 1,
+        options: [
+            {
+                name: "coordinates",
+                description: "put your correct coordinates x,y,z",
+                type: 3,
+                required: true
+            },
+        ]
     }
+
 ];
 
 const clientId = process.env.CLIENT_ID;
